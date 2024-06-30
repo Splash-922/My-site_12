@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="style(second).css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@200&family=Montserrat:wght@100&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<header class="header">
+    <div class="wrapper">
+        <div class="header__wrapper">
+            <img src="triangle-logo 1.png" alt="header__logo" class="header__logo">
+            <div class="header-menu">
+                <a href="" class="header-menu__link">Главаная</a>
+                <a href="" class="header-menu__link">Раздел""</a>
+                <a href="" class="header-menu__link">Раздел""</a>
+                <a href="https://www.instagram.com/sspllashhh/" class="header-menu__link">instagram</a>
+                <div class="header-theme">
+                    <button id="light" class="header-theme__button">
+                        Светлая тема
+                    </button>
+                    <button id="dark" class="header-theme__button">
+                        Тёмная тема
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+<main>
+    <section class="main">
+        <div class="wrapper">
+            <div class="main__wrapper">
+                <div class="main-left">
+                    <h1 class="mein-left--tittle">это мой сайт</h1>
+                    <p class="main-left__text"> и его тема</p>
+                </div>
+                <div class="main-right">
+                    <img src="space.jpg" alt="space" class="main-right--img">
+                    <p class="space-title">Космос</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="youtube" id="youtube">
+        <div class="wrapper">
+            <div class="youtube__wrapper">
+                <h2 class="youtube__tittle">
+                    Видео про космос
+                </h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ojz290wJ1Ek?si=yY6-KgppyTEjx_Oy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            </div>
+    </section>
+        <section class="event" id="event">
+                <div class="wrapper">
+                    <div class="event__wrapper">
+                        <h2 id="eventTitle" class="event__title">
+                            Секция событий:
+                        </h2>
+                        <div class="event__btns">
+                            <button onclick="switch_font_size()"  class="event__btn">
+                                кнопка 1
+                            </button>
+                            <button onclick="how_are_you()"  class="event__btn">
+                                кнопка 2
+                            </button>
+                            <button onclick="delat()"  class="event__btn">
+                                кнопка 3
+                            </button>
+                            <button onclick="date()" class="event__btn">
+                                кнопка 4
+                            </button>
+                        </div>
+                    </div>
+                    <h1 class="planets">Все планеты в солнечной системе со звёдами:</h1>
+                </div>
+        </section>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h1>Земля(Планета)</h1>
+                        <img src="Земля.png" alt="erde" class="img_slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Луна(Спутник)</h1>
+                        <img src="moon.jpg" alt="moon" class="img_slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Солнце(Звезда)</h1>
+                        <img src="sun.jpg" alt="sun" class="img_slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Меркурий(Планета)</h1>
+                        <img src="Mercury-l-1.webp" alt="mercury" class="img_slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Венера(Планета)</h1>
+                        <img src="venera.jpg" alt="venera" class="img_slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Марс(Планета)</h1>
+                        <img src="mars.jpg" alt="mars" class="img_slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Юпитер(Планета)</h1>
+                        <img src="Yupiter.jpg" alt="yupiter" class="img_slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Сатурн(Планета)</h1>
+                        <img src="saturn.jpg" alt="saturn" class="img_slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Уран(Планета)</h1>
+                        <img src="Uran.webp" alt="Uran" class="img_slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Нептун(Планета)</h1>
+                        <img src="neptun.jpg" alt="neptun" class="img_slide">
+                    </div>
+                </div>
+            </div>
+            <section class='section-creator'>
+                <div class="wrapper">
+                    <form class="section-creator__wrapper">
+                        <div>
+                            <input id="titleCreator" class="section-creator__input" type="text" placeholder="Введите заголовок">
+                            <button type="button" id="addTitle" class="section-creator__button">Добавить заголовок</button>
+                        </div>
+                        <div>
+                            <input id="imgCreator" class="section-creator__input" type="text" placeholder="Вставьте ссылку на картинку">
+                            <button type="button" id="addImage" class="section-creator__button">Добавить картинку</button>
+                        </div>
+                        <div>
+                            <textarea placeholder="Напишите текст" id="textCreator" class="section-creator__input">
+                            </textarea>
+                            <button type="button" id="addText" class="section-creator__button">Добавить текст</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="project">
+            <div class="wrapper">
+                <div class="project__wrapper">
+                    <div class="project__left">
+                        <h2 id="projectTitle" class="project__title"></h2>
+                        <p id="projectText" class="project__text">
+             
+                        </p>
+                    </div>
+                    <div id="projectImg" class="project__img"></div>
+                </div>
+            </div>
+        </section>
+</main>
+<footer>
+    <div class="footer-info">
+        <p>Я Максим</p>
+        <p>Это мой второй сайт</p>
+    </div>
+    <div class="footer-year">
+        <p>2024</p>
+    </div>
+    <div class="footer-links">
+        <a href="https://discord.gg/kGGgpAJX">
+            <img src="discord.png" alt="discord" class="discord">
+        </a>
+        <a href="https://t.me/Splasshhhhhhh">
+            <img src="telegram.png" alt="telegram" class="telegram">
+        </a>
+        <a href="https://www.instagram.com/sspllashhh/">
+            <img src="instagram.png" alt="instagram" class="instagram">
+        </a>
+    </div>
+</footer>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".mySwiper", {
+                effect: 'flip',
+                autoplay: true,
+            });
+
+
+        </script>
+        
+        <script src="script(second).js"></script>
+
+
+</body>
+</html>

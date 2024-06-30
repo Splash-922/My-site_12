@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    font-family: 'Lumanosimo';
+    color: white;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    background-color: rgb(92, 90, 124);
+    border-radius: 50px;
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+}
+
+#plus, #minus, .button-rand {
+    border-radius: 50px;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(92, 90, 124);
+}
+
+#random {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    color: white;
+    font-family: 'Lumanosimo';
+    font-size: 18px;
+    
+}
+
+.clock {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    font-size: 40px;
+}
+
+#form, #buttons {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex span label {
+    margin-right: 5px;
+}
+.checkbox {
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 0;
+    padding: 5px 15px;
+    font-family: 'Lumanosimo', cursive !important;
+    color: white !important;
+    background-color: rgb(92, 90, 124);
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+#buttons {
+    display: flex;
+    width: 300px;
+}
+
+#buttons .button {
+    margin-top: 0;
+}
+
+#picture {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+
+
+#picture img {
+    max-width: 400px;
+    max-height: 400px;
+}
+/* footer{
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+}
+.footer-year p{
+    font-family: 'Lumanosimo', cursive !important;
+    letter-spacing: 1.5px;
+}
+.footer-links img{
+    margin-right: 15px;
+    width: 47px;
+    height: 47px;
+} */
